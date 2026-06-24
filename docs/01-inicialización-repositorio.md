@@ -24,6 +24,8 @@ Una vez creado el proyecto con vite, entrar a la carpeta del proyecto e instalar
 `cd grand-line-dashboard` - Para ingresar a la carpeta del proyecto
 `npm install` - instalación de dependencias npm.
 
+Desde este punto ya se puede ejecutar el comando `npm run dev`, para visualizar en en navegador segun la ruta, el proyecto creado en vite, por ejemplo `http://localhost:5173/`
+
 ### 2. Inicialización de Git (Entorno Local)
 
 El control de versiones se configura desde el minuto cero, no cuando el proyecto ya está terminado.
@@ -31,19 +33,20 @@ El control de versiones se configura desde el minuto cero, no cuando el proyecto
 **Comandos ejecutados:**
 `git init`
 `git add .`
-`git commit -m "inicialización del proyecto con Vite"`
+`git commit -m "chore:inicialización del proyecto con Vite"`
 
 *¿Por qué "chore"?* Es una buena práctica usar Conventional Commits. "chore" indica tareas de mantenimiento o configuración que no modifican código de producción.
 
 ## 3. Conexión con GitHub (Entorno Remoto)
 
-Para respaldar mi código y construir mi portafolio profesional, conecté este repositorio local con GitHub.
+Para respaldar el código y construir un portafolio profesional, conecte este repositorio local con GitHub.
 
-**Pasos realizados:**
-1. Fui a mi perfil (https://github.com/HarvinZapata) y creé un nuevo repositorio vacío llamado `grand-line-dashboard` (sin README ni .gitignore, porque Vite ya me generó el .gitignore).
-2. Vinculé mi repositorio local con el remoto usando los siguientes comandos:
+**Pasos:**
 
-`git remote add origin https://github.com/HarvinZapata/grand-line-dashboard.git`
+1. Ingresar a github `github.com` y crear un nuevo repositorio vacío llamado `grand-line-dashboard` (sin README ni .gitignore, porque Vite ya me generó el .gitignore).
+2. Vincular el repositorio local con el remoto usando los siguientes comandos:
+
+`git remote add origin https://github.com/HarvinZapata/grand-line-dashboard.git` (ruta entregada por github, modo https también se puede ssh),
 `git branch -M main`
 `git push -u origin main`
 
@@ -56,6 +59,12 @@ Para asegurar el aprendizaje activo (Active Recall) y no caer en el *Tutorial He
 **Comandos ejecutados:**
 `mkdir docs`
 `cd docs`
-`touch 01-inicializacion-y-repositorio.md`
+`touch 01-inicializacion-repositorio.md`
 
 De esta manera, el código y la documentación viven en el mismo ecosistema. En el `README.md` principal dejaré un índice apuntando a estos archivos para que los reclutadores puedan ver mi proceso de pensamiento, no solo el resultado final.
+
+### 5. Adicional: configuración de llaves
+
+**Comandos ejecutados:**
+
+Esto es para que no se tenga que escribir la contraseña de git cada vez que se hace un push a github.
