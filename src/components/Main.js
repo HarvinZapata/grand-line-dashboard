@@ -6,7 +6,7 @@ export default function Main() {
       <p class="text-amber-700 font-light text-sm text-center mb-4">MARINE HEADQUARTERS · CLASSIFIED REGISTRY</p>
       <h2 class="text-amber-950 font-extrabold text-5xl text-center mb-4">BOUNTY REGISTRY</h2>
 
-      <div class="flex items-center justify-center gap-3 mb-4   ">
+      <div class="flex items-center justify-center gap-3 mb-4">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" width="40" height="10" class="flex-1" preserveAspectRatio="none">
           <line x1="65" y1="5" x2="100" y2="5" stroke="#C10007" stroke-width="1"/>
         </svg>
@@ -38,31 +38,25 @@ export default function Main() {
         </svg>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-
-      <div class="grid grid-cols-7 mx-auto max-w-2xl text-amber-700">
-
-        <aside class="col-span-2  text-center text-[10px] border-e border-amber-600">
-        <p>ACTIVE RECORDS</p>
-        <p id="contador" class="text-xl font-bold">x/12</p>
+      <div class="grid grid-cols-7 mx-auto max-w-2xl text-amber-700 mb-8">
+        <aside class="col-span-2 text-center text-[10px] border-e border-amber-600">
+          <p>ACTIVE RECORDS</p>
+          <p id="contador" class="text-xl font-bold">0</p>
         </aside>
 
-        <section class="col-span-3  text-center text-[10px] border-e border-amber-600">
-        <p>TOTAL BOUNTIES</p>
-        <p class="text-xl font-bold text-amber-950">฿ 14,000,000,000</p>
+        <section class="col-span-3 text-center text-[10px] border-e border-amber-600">
+          <p>TOTAL BOUNTIES</p>
+          <p id="total-bounties" class="text-xl font-bold text-amber-950">฿ 0</p>
         </section>
 
-        <aside class="col-span-2  text-center text-[10px]">
-        <p>STATUS</p>
-        <p class="text-xl font-bold text-red-700">ACTIVE THREAT</p>
+        <aside class="col-span-2 text-center text-[10px]">
+          <p>STATUS</p>
+          <p id="status-label" class="text-xl font-bold text-red-700">LOADING</p>
         </aside>
       </div>
 
       ${Cards()}
-
     </main>
     `
 }
-
-
 

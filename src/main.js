@@ -1,8 +1,8 @@
 import './style.css'
 import './variables.css'
-import imgAncla from './assets/ancla.png'
 import Header from './components/Header.js'
 import Main from './components/Main.js'
+import { initCards } from './components/cards.js'
 
 document.querySelector('#app').innerHTML = `
   <div class="min-h-screen bg-amber-100/50 flex flex-col font-sans text-slate-800">
@@ -16,3 +16,5 @@ document.querySelector('#app').innerHTML = `
 
   </div>
 `
+
+initCards();
