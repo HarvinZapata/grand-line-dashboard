@@ -6,7 +6,7 @@ export default function Main() {
       <p class="text-amber-700 font-light text-sm text-center mb-4">MARINE HEADQUARTERS · CLASSIFIED REGISTRY</p>
       <h2 class="text-amber-950 font-extrabold text-5xl text-center mb-4">BOUNTY REGISTRY</h2>
 
-      <div class="flex items-center justify-center gap-3 mb-4">
+      <div class="flex items-center justify-center gap-3 mb-4   ">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" width="40" height="10" class="flex-1" preserveAspectRatio="none">
           <line x1="65" y1="5" x2="100" y2="5" stroke="#C10007" stroke-width="1"/>
         </svg>
@@ -44,7 +44,7 @@ export default function Main() {
 
         <aside class="col-span-2  text-center text-[10px] border-e border-amber-600">
         <p>ACTIVE RECORDS</p>
-        <p class="text-xl font-bold">x/12</p>
+        <p id="contador" class="text-xl font-bold">x/12</p>
         </aside>
 
         <section class="col-span-3  text-center text-[10px] border-e border-amber-600">
