@@ -1,3 +1,5 @@
+//Código creado por GitHub Copilot, busca errores y corrige el código si es necesario.
+
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
